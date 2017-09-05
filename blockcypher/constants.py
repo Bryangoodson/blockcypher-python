@@ -52,6 +52,23 @@ COIN_SYMBOL_ODICT_LIST = [
             'vbyte_script': 5,
             },
         {
+            'coin_symbol': 'vtc',
+            'display_name': 'Vertcoin',
+            'display_shortname': 'VTC',
+            'blockcypher_code': 'vtc',
+            'blockcypher_network': 'main',
+            'currency_abbrev': 'VTC',
+            'pow': 'Lyra2rev2',
+            'example_address': 'VpBsRnN749jYHE9hT8dZreznHfmFMdE1yG',
+            'address_first_char_list': ('v', ),
+            'singlesig_prefix_list': ('V', ),
+            'multisig_prefix_list': ('3', ),
+            'first4_mprv': 'vtpv',
+            'first4_mpub': 'vtub',
+            'vbyte_pubkey': 71,
+            'vbyte_script': 5,
+            },
+        {
             'coin_symbol': 'doge',
             'display_name': 'Dogecoin',
             'display_shortname': 'DOGE',
@@ -123,7 +140,7 @@ REQUIRED_FIELDS = (
     'vbyte_script',  # script hash version byte
     )
 
-ELIGIBLE_POW_ENTRIES = set(['sha', 'scrypt', 'x11'])
+ELIGIBLE_POW_ENTRIES = set(['sha', 'scrypt', 'x11','Lyra2rev2'])
 
 # Safety checks on the data
 for coin_symbol_dict in COIN_SYMBOL_ODICT_LIST:
